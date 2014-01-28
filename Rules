@@ -40,14 +40,37 @@ compile "/release_notes/*" do
   layout 'release_notes'
 end
 
+compile "/upgrades/*" do
+  filter :pretty_urls
+  filter :erb
+  filter :parse_info_boxes
+  # Converts ``` codeblocks into Kramdown-friendly ~~~
+  filter :fenced_code_blocks
+  filter :kramdown, :toc_levels => [2], :coderay_line_numbers => nil, :coderay_css => :class
+  layout 'upgrades'
+end
+
+compile "/upgrades/" do
+  filter :pretty_urls
+  filter :erb
+  filter :parse_info_boxes
+  # Converts ``` codeblocks into Kramdown-friendly ~~~
+  filter :fenced_code_blocks
+  filter :kramdown, :toc_levels => [2], :coderay_line_numbers => nil, :coderay_css => :class
+  layout 'upgrades'
+end
+
 route "/release_notes/*/" do
   location = item.identifier.gsub('/release_notes/', '/release_notes/spree_')
   location.chop + ".html"
 end
 
-route "/developer/upgrades/*/" do
-  location = item.identifier
-  location.chop + ".html"
+route "/upgrades/" do
+  item.identifier.chop + "/index.html"
+end
+
+route "/upgrades/*" do
+  item.identifier.chop + ".html"
 end
 
 compile "/static/common/**/*" do

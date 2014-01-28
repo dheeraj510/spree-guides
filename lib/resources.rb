@@ -80,6 +80,8 @@ module Spree
       end
 
       def link_to(text, link, anchor=nil)
+        # require 'pry'
+        # binding.pry if @item.identifier.include?("api")
         if link.is_a?(Symbol)
           url = LINKS[link]
           raise "No link found for #{link}" unless url
@@ -88,7 +90,7 @@ module Spree
         end
 
         version = @item[:version] || @item[:latest_version]
-        url = "#{@item[:version]}/#{url}"
+        url = "/#{@item[:version]}/#{url}"
         if anchor
           "<a href='#{url}.html##{anchor}'>#{text}</a>"
         else
