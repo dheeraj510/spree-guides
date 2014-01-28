@@ -13,7 +13,7 @@ functional requirements, including:
 
 For more detailed information and a step-by-step tutorial on creating
 extensions for Spree be sure to checkout the
-[Extensions](extensions_tutorial.html) guide.
+<%= link_to "Extensions", "developer/extensions_tutorial" %> guide.
 
 ### Managing Customizations
 
@@ -32,7 +32,7 @@ business's operating procedures, branding, or provide a unique feature.
 
 All application specific customizations are stored within the host
 application where Spree is installed (please see the Installation
-section of the [Getting Started with Spree](getting_started_tutorial.html) guide,
+section of the <%= link_to "Getting Started with Spree", "developer/getting_started_tutorial" %> guide,
 for how to setup the host application). Application customizations are
 not generally shared or re-used in any way.
 
@@ -58,7 +58,7 @@ customizations.
 
 ***
 For more implementation details on Extensions and Themes please
-refer to the [Extensions & Themes](extensions_tutorial.html) guide.
+refer to the <%= link_to "Extensions", "developer/extensions_tutorial" %> guide.
 ***
 
 ### Customization Options
@@ -69,17 +69,14 @@ then need to choose the correct option to achieve the desired changes.
 #### View Customizations
 
 Allows you to change and/or extend the look and feel of a Spree store
-(and its administration system). For details see the [View
-Customization](view_customization.html) guide.
+(and its administration system). For details see the <%= link_to "View Customization", "developer/view" %> guide.
 
 #### Asset Customizations
 
 Allows changing the static assets provided by Spree, this includes
-stylesheets, JavaScript files and images. For details see the [Asset
-Customization](asset_customization.html) guide.
+stylesheets, JavaScript files and images. For details see the  <%= link_to "Asset Customization", "developer/asset" %> guide.
 
 #### Logic Customizations
 
 Enables the changing and/or extension of the logic of Spree to meet your
-specific business requirements. For details see the [Logic
-Customization](logic_customization.html) guide.
+specific business requirements. For details see the  <%= link_to "Logic Customization", "developer/logic" %> guide.

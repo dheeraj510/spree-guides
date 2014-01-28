@@ -12,7 +12,7 @@ To create a new product for your store, go into the Admin Interface, click the "
 The two mandatory fields ("Name" and "Master Price") are denoted with an asterisk (&#42;) next to the label. You can leave SKU blank. If you don't add a value for "Available On" the product will not be shown in your store.
 
 ***
-[Prototypes](prototypes.md) are a more complex topic, and are covered in their own guide.
+<%= link_to "Prototypes", "user/product_prototypes" %> are a more complex topic, and are covered in their own guide.
 ***
 
 ## Product Details
@@ -34,8 +34,8 @@ After you click the "Create" button, the Spree application brings you to a more 
 * **Width** - The product's width in inches. May be used to calculate shipping cost.
 * **Depth** - The product's depth or breadth in inches. May be used to calculate shipping cost.
 * **Shipping Categories** - You will learn about setting up Shipping Categories in the [Shipping Categories](shipping_categories).
-* **Tax Category** - You will learn about setting up Tax Categories in the [Taxes Guide](taxes).
-* **Taxons** - Taxons are basically like categories. You will learn more about them in the [Taxonomies Guide](taxonomies).
+* **Tax Category** - You will learn about setting up Tax Categories in the <%= link_to "Taxation guide", "user/taxation" %>.
+* **Taxons** - Taxons are basically like categories. You will learn more about them in the <%= link_to "Taxonomies guide", "user/configuring_taxonomies" %>.
 * **Option Types** - You can select any number of Options to associate your new product with. You'll learn more about Options in the [Options Guide](product_options).
 * **Meta Keywords** - These words are appended to the website's keywords you established in the [Site Settings](configuring_general_settings) and can help improve your site's search engine ratings, bringing you more web traffic. They should be words that are key to your new product.
 * **Meta Description** - The summary that someone sees when your product's page is returned in a web search. It should be descriptive but not overly verbose.
@@ -111,9 +111,9 @@ You can read much more in-depth information about this feature in the [Product P
 
 ## Stock Management
 
-As of version 2.0 of Spree, you now have much more granular control over how inventory is tracked through your store. You will learn more about stock locations in the [Stock Locations Guide](stock_locations), but for now it's enough to understand that you enter the number of each product variant that you have at each of your individual stock locations.
+As of version 2.0 of Spree, you now have much more granular control over how inventory is tracked through your store. You will learn more about stock locations in the <%= link_to "Stock Locations Guide", "user/stock_locations" %>, but for now it's enough to understand that you enter the number of each product variant that you have at each of your individual stock locations.
 
-Let's assume that you have two stock locations - your main New York warehouse and your satellite Detroit warehouse. Refer to the instructions on creating stock locations in the [Stock Locations Guide](stock_locations#create-a-new-stock-location) to add your warehouses.
+Let's assume that you have two stock locations - your main New York warehouse and your satellite Detroit warehouse. Refer to the instructions on creating stock locations in the <%= link_to "Stock Locations Guide", "user/stock_locations", "create-a-new-stock-location" %> to add your warehouses.
 
 Now, go back to the Tumblers product page, and click the "Stock Management" link.
 
@@ -131,4 +131,4 @@ Your Stock Location Info table should now look like the one pictured above.
 "Backorderable" may or may not be checked for your individual Stock Locations, depending on how you configured them. Each Stock Location has defaults for this value, but you can change it on a variant-by-variant basis in this dialog.
 ***
 
-You should be sure to read the [Stock Locations](stock_locations) and [Stock Movements](stock_movements) guides for further information on managing your store's inventory.
+You should be sure to read the <%= link_to "Stock Locations", "user/stock_locations" %> and <%= link_to "Stock Movements", "user/stock_movements" %> guides for further information on managing your store's inventory.

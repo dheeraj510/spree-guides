@@ -105,7 +105,7 @@ end
 ```
 
 ***
-To learn more about the storefront's built-in preferences, see the [Preferences guide](/developer/preferences).
+To learn more about the storefront's built-in preferences, see the <%= link_to "Preferences guide", "developer/preferences" %>.
 ***
 
 Save your changes, then stop and restart your server to load the new configuration information. Now, when you go to checkout, you will see the new "Company" field.
@@ -210,7 +210,7 @@ The `variety` key is there in the output (line 5). There is no value for it, bec
 
 ## Creating Custom Endpoint
 
-In the [Creating a Fulfillment Endpoint Tutorial](creating_fulfillment_tutorial), we made a basic endpoint that had some simple logic relating to shipments. In this tutorial, we'll create a similar fulfillment endpoint. In [the next section](#accessing-custom-data), we'll extend it to account for the custom attribute and take different actions accordingly.
+In the <%= link_to "Creating a Fulfillment Endpoint Tutorial", "/integration/fulfillment_integration_tutorial" %>, we made a basic endpoint that had some simple logic relating to shipments. In this tutorial, we'll create a similar fulfillment endpoint. In [the next section](#accessing-custom-data), we'll extend it to account for the custom attribute and take different actions accordingly.
 
 First, we need a new directory to house our integration files.
 
