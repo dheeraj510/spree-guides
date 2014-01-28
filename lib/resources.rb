@@ -25,6 +25,10 @@ module Spree
 
       DefaultTimeFormat ||= "%B %-d, %Y".freeze
 
+      def version
+        @item[:version] || @item[:latest_version]
+      end
+
       def post_date(item)
         strftime item[:created_at]
       end
@@ -82,6 +86,9 @@ module Spree
         else
           url = link
         end
+
+        version = @item[:version] || @item[:latest_version]
+        url = "#{@item[:version]}/#{url}"
         if anchor
           "<a href='#{url}.html##{anchor}'>#{text}</a>"
         else
